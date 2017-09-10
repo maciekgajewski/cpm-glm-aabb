@@ -1,7 +1,8 @@
 #include "AABB.hpp"
+
 #include <glm/gtx/component_wise.hpp>
 
-namespace CPM_GLM_AABB_NS {
+namespace glm {
 
 AABB::AABB()
 {

@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 
-namespace CPM_GLM_AABB_NS {
+namespace glm {
 
 /// Standalone axis aligned bounding box implemented built on top of GLM.
 class AABB
