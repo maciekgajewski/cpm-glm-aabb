@@ -1,12 +1,6 @@
 cmake_minimum_required(VERSION 2.8.0 FATAL_ERROR)
 
 #-----------------------------------------------------------------------
-# CPM configuration
-#-----------------------------------------------------------------------
-set(CPM_MODULE_NAME "glm_aabb")
-set(CPM_LIB_TARGET_NAME ${CPM_MODULE_NAME})
-
-#-----------------------------------------------------------------------
 # Source
 #-----------------------------------------------------------------------
 
@@ -22,6 +16,8 @@ file (GLOB Sources
 #-----------------------------------------------------------------------
 
 # Build the library.
-add_library(${CPM_LIB_TARGET_NAME} ${Sources})
-
+add_library(glm_aabb ${Sources})
+target_link_libraries(glm_aabb
+	glm_static
+)
 
